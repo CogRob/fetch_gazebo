@@ -17,13 +17,13 @@
 
   <author>Alex Moriarty</author>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
   <exec_depend>fetch_gazebo</exec_depend>
-  <exec_depend>fetch_gazebo_demo</exec_depend>
-  <exec_depend>fetchit_challenge</exec_depend>
+  <!-- <exec_depend>fetch_gazebo_demo</exec_depend> -->
+  <!-- <exec_depend>fetchit_challenge</exec_depend> -->
 
   <export>
-    <metapackage/>
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
