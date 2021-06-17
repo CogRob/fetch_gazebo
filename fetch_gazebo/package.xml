@@ -22,6 +22,7 @@
 
   <depend>control_toolbox</depend>
   <depend>gazebo_ros</depend>
+  <depend>rclcpp</depend>
   <depend>robot_controllers</depend>
   <depend>robot_controllers_interface</depend>
   <depend>sensor_msgs</depend>
