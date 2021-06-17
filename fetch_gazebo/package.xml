@@ -30,7 +30,7 @@
   <!-- <exec_depend>actionlib</exec_depend> -->
   <exec_depend>control_msgs</exec_depend>
   <exec_depend>depth_image_proc</exec_depend>
-  <!-- <exec_depend>fetch_description</exec_depend> -->
+  <exec_depend>fetch_description</exec_depend>
   <exec_depend>gazebo</exec_depend>
   <exec_depend>gazebo_plugins</exec_depend>
   <exec_depend>image_proc</exec_depend>
