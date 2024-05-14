@@ -35,7 +35,7 @@
 // Author: Michael Ferguson
 
 #include <ros/ros.h>
-#include <sensor_msgs/JointState.h>
+#include "sensor_msgs/msg/joint_state.hpp"
 #include <robot_controllers_interface/controller_manager.h>
 #include <fetch_gazebo/joint_handle.h>
 #include <gazebo/common/common.hh>
@@ -123,7 +123,7 @@ void FetchGazeboPlugin::Init()
   controller_manager_.init(pnh);
 
   // Publish joint states only after controllers are fully ready
-  joint_state_pub_ = nh_.advertise<sensor_msgs::JointState>("joint_states", 10);
+  joint_state_pub_ = nh_.advertise<sensor_msgs::msg::JointState>("joint_states", 10);
 
   ROS_INFO("Finished initializing FetchGazeboPlugin");
 }
@@ -153,7 +153,7 @@ void FetchGazeboPlugin::OnUpdate(
     return;
 
   // Publish joint_state message
-  sensor_msgs::JointState js;
+  sensor_msgs::msg::JointState js;
   js.header.stamp = ros::Time(currTime.Double());
   for (size_t i = 0; i < joints_.size(); ++i)
   {
